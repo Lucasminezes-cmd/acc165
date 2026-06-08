@@ -589,7 +589,7 @@
         margin-bottom: 0.2rem;
       }
 
-      .xll-6pe {
+      .esconder {
         display: none;
       }
     </style>
@@ -769,14 +769,14 @@
     </script>
 
     <script>
-      const tempoPitch = 3615
+      const tempoPitch = 5
       const minutos = Math.floor(tempoPitch / 100)
       const segundos = tempoPitch % 100
       const tempoPitchSegundos = minutos * 60 + segundos
       var delaySeconds = tempoPitchSegundos
       var player = document.querySelector("vturb-smartplayer")
       player.addEventListener("player:ready", function () {
-        player.displayHiddenElements(delaySeconds, [".whd-9jk"], {
+        player.displayHiddenElements(delaySeconds, [".esconder"], {
           persist: true,
         })
       })
